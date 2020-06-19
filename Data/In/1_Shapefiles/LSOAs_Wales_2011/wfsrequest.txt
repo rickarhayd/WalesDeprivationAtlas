@@ -1,1 +1,0 @@
-http://lle.gov.wales/services/wfs?version=2.0.0&request=GetFeature&typeName=appdata-ons:lsoa_wales_2011&outputFormat=SHAPE-ZIP
