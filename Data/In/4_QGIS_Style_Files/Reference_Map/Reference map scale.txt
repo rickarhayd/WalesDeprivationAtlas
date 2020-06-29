@@ -1,0 +1,1 @@
+Reference map scale = 1:7,900,000

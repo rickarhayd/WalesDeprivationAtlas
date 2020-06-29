@@ -9,10 +9,10 @@ library(sf)
 #> Merge NAME1 and NAME2 into a new column such that only english placenames are retained
 #> Import data
 placenames <- st_read(here("Data", "In", "1_Shapefiles", "OS_OpenNames_Populated_Place.shp"))
-#Remove accents (i.e arrow above "a" in Welsh place names)
-a <- "â"
-placenames$NAME1 <- str_replace_all(placenames$NAME1, a, "a")
-placenames$NAME2 <- str_replace_all(placenames$NAME2, a, "a")
+# #Remove accents (i.e arrow above "a" in Welsh place names)
+# a <- "â"
+# placenames$NAME1 <- str_replace_all(placenames$NAME1, a, "a")
+# placenames$NAME2 <- str_replace_all(placenames$NAME2, a, "a")
 #> Get English placenames from column NAME1_LANG
 places.eng1 <- placenames %>% 
   filter(NAME1_LANG == "eng") %>% 
@@ -86,6 +86,8 @@ for (i in 1:length(LA.names)) {
   st_write(df, here("Data", "Out", "Shapefiles", "Placenames", "Placenames_by_LA", paste0("LA.names", LA.names[i], ".shp")))
   df <- NULL
 }
+
+
 
 
 
