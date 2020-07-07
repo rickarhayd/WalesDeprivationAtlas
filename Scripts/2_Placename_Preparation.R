@@ -89,6 +89,6 @@ for (i in 1:length(LA.names)) {
 
 
 
-
+R --version
 
 
