@@ -1,19 +1,19 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis maxScale="0" simplifyDrawingTol="1" version="3.4.8-Madeira" labelsEnabled="0" hasScaleBasedVisibilityFlag="0" simplifyAlgorithm="0" simplifyLocal="1" minScale="1e+08" simplifyDrawingHints="1" styleCategories="AllStyleCategories" simplifyMaxScale="1" readOnly="0">
+<qgis simplifyDrawingTol="1" simplifyLocal="1" styleCategories="AllStyleCategories" simplifyMaxScale="1" readOnly="0" maxScale="0" labelsEnabled="0" minScale="1e+08" simplifyAlgorithm="0" version="3.4.8-Madeira" simplifyDrawingHints="1" hasScaleBasedVisibilityFlag="0">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
   </flags>
-  <renderer-v2 symbollevels="0" forceraster="0" type="RuleRenderer" enableorderby="0">
-    <rules key="{6a366551-1865-4e3b-acda-9c55860f3121}">
-      <rule filter="$id = @atlas_featureid " symbol="0" key="{67532506-d14c-41e2-a9fb-1b42b2566228}"/>
+  <renderer-v2 forceraster="0" type="RuleRenderer" enableorderby="0" symbollevels="0">
+    <rules key="{752a7d39-99c0-4824-a766-a5d2930e50b4}">
+      <rule filter="$id = @atlas_featureid " symbol="0" key="{d7ba7094-a191-4ce0-86dd-3137bcccd511}"/>
     </rules>
     <symbols>
-      <symbol clip_to_extent="1" name="0" alpha="1" type="fill" force_rhr="0">
-        <layer class="SimpleFill" enabled="1" locked="0" pass="0">
+      <symbol clip_to_extent="1" force_rhr="0" alpha="1" type="fill" name="0">
+        <layer enabled="1" pass="0" locked="0" class="SimpleFill">
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="227,26,28,255"/>
+          <prop k="color" v="215,25,28,255"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -25,9 +25,9 @@
           <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" type="QString" value=""/>
+              <Option type="QString" value="" name="name"/>
               <Option name="properties"/>
-              <Option name="type" type="QString" value="collection"/>
+              <Option type="QString" value="collection" name="type"/>
             </Option>
           </data_defined_properties>
         </layer>
@@ -36,20 +36,20 @@
   </renderer-v2>
   <labeling type="simple">
     <settings>
-      <text-style fontFamily="MS Shell Dlg 2" fontWordSpacing="0" previewBkgrdColor="#ffffff" isExpression="0" fontUnderline="0" fontWeight="50" useSubstitutions="0" namedStyle="Regular" fontSize="8" fieldName="NAME" fontSizeMapUnitScale="3x:0,0,0,0,0,0" textOpacity="1" textColor="0,0,0,255" fontLetterSpacing="0" blendMode="0" fontItalic="0" multilineHeight="1" fontCapitals="0" fontSizeUnit="Point" fontStrikeout="0">
-        <text-buffer bufferSize="1" bufferSizeUnits="MM" bufferColor="255,255,255,255" bufferNoFill="1" bufferOpacity="1" bufferDraw="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferBlendMode="0" bufferJoinStyle="128"/>
-        <background shapeOpacity="1" shapeSizeType="0" shapeRotation="0" shapeSizeUnit="MM" shapeRadiiY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeType="0" shapeJoinStyle="64" shapeBorderWidthUnit="MM" shapeBorderWidth="0" shapeOffsetUnit="MM" shapeDraw="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeRotationType="0" shapeBorderColor="128,128,128,255" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBlendMode="0" shapeOffsetY="0" shapeFillColor="255,255,255,255" shapeSizeX="0" shapeSVGFile="" shapeRadiiUnit="MM" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiX="0" shapeOffsetX="0"/>
-        <shadow shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetGlobal="1" shadowDraw="0" shadowRadiusAlphaOnly="0" shadowUnder="0" shadowRadius="1.5" shadowOffsetUnit="MM" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetAngle="135" shadowScale="100" shadowOffsetDist="1" shadowRadiusUnit="MM" shadowBlendMode="6" shadowColor="0,0,0,255" shadowOpacity="0.7"/>
+      <text-style fontWeight="50" textColor="0,0,0,255" fontStrikeout="0" fontUnderline="0" fontWordSpacing="0" fontFamily="MS Shell Dlg 2" fontCapitals="0" fontLetterSpacing="0" textOpacity="1" previewBkgrdColor="#ffffff" fontSizeMapUnitScale="3x:0,0,0,0,0,0" namedStyle="Regular" fontItalic="0" fontSize="8" isExpression="0" multilineHeight="1" fieldName="NAME" fontSizeUnit="Point" useSubstitutions="0" blendMode="0">
+        <text-buffer bufferDraw="1" bufferSizeUnits="MM" bufferOpacity="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferNoFill="1" bufferSize="1" bufferColor="255,255,255,255" bufferJoinStyle="128" bufferBlendMode="0"/>
+        <background shapeDraw="0" shapeOffsetX="0" shapeRotationType="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeBorderColor="128,128,128,255" shapeSizeUnit="MM" shapeOffsetY="0" shapeRadiiX="0" shapeSizeType="0" shapeRadiiUnit="MM" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeFillColor="255,255,255,255" shapeBorderWidth="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeJoinStyle="64" shapeType="0" shapeSVGFile="" shapeRadiiY="0" shapeBorderWidthUnit="MM" shapeBlendMode="0" shapeOpacity="1" shapeOffsetUnit="MM" shapeRotation="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeSizeX="0"/>
+        <shadow shadowOffsetUnit="MM" shadowOpacity="0.7" shadowColor="0,0,0,255" shadowUnder="0" shadowScale="100" shadowRadiusUnit="MM" shadowRadiusAlphaOnly="0" shadowDraw="0" shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadius="1.5" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetDist="1" shadowBlendMode="6" shadowOffsetGlobal="1"/>
         <substitutions/>
       </text-style>
-      <text-format useMaxLineLengthForAutoWrap="1" decimals="3" multilineAlign="4294967295" rightDirectionSymbol=">" plussign="0" wrapChar="" reverseDirectionSymbol="0" formatNumbers="0" placeDirectionSymbol="0" autoWrapLength="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;"/>
-      <placement maxCurvedCharAngleOut="-25" centroidWhole="0" repeatDistance="0" yOffset="0" priority="5" placement="4" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" xOffset="0" rotationAngle="0" maxCurvedCharAngleIn="25" offsetUnits="MM" distUnits="MM" quadOffset="4" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceUnits="MM" placementFlags="10" fitInPolygonOnly="0" offsetType="0" distMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" centroidInside="0" dist="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR"/>
-      <rendering zIndex="0" obstacle="1" fontMinPixelSize="3" displayAll="0" scaleMax="0" fontMaxPixelSize="10000" labelPerPart="0" limitNumLabels="0" drawLabels="1" obstacleFactor="1" maxNumLabels="2000" scaleMin="0" upsidedownLabels="0" scaleVisibility="0" mergeLines="0" minFeatureSize="0" obstacleType="0" fontLimitPixelSize="0"/>
+      <text-format wrapChar="" decimals="3" placeDirectionSymbol="0" leftDirectionSymbol="&lt;" autoWrapLength="0" useMaxLineLengthForAutoWrap="1" formatNumbers="0" reverseDirectionSymbol="0" rightDirectionSymbol=">" plussign="0" addDirectionSymbol="0" multilineAlign="4294967295"/>
+      <placement centroidWhole="0" priority="5" yOffset="0" dist="0" centroidInside="0" distMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceUnits="MM" xOffset="0" fitInPolygonOnly="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" offsetUnits="MM" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" rotationAngle="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" preserveRotation="1" quadOffset="4" offsetType="0" distUnits="MM" maxCurvedCharAngleIn="25" maxCurvedCharAngleOut="-25" placement="4" placementFlags="10" repeatDistance="0"/>
+      <rendering obstacleType="0" mergeLines="0" maxNumLabels="2000" fontMaxPixelSize="10000" upsidedownLabels="0" limitNumLabels="0" obstacleFactor="1" fontLimitPixelSize="0" obstacle="1" displayAll="0" scaleMin="0" labelPerPart="0" drawLabels="1" scaleMax="0" zIndex="0" scaleVisibility="0" fontMinPixelSize="3" minFeatureSize="0"/>
       <dd_properties>
         <Option type="Map">
-          <Option name="name" type="QString" value=""/>
+          <Option type="QString" value="" name="name"/>
           <Option name="properties"/>
-          <Option name="type" type="QString" value="collection"/>
+          <Option type="QString" value="collection" name="type"/>
         </Option>
       </dd_properties>
     </settings>
@@ -63,18 +63,18 @@
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
-  <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-    <DiagramCategory barWidth="5" maxScaleDenominator="1e+08" diagramOrientation="Up" enabled="0" backgroundAlpha="255" penColor="#000000" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" rotationOffset="270" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" width="15" minimumSize="0" penAlpha="255" scaleDependency="Area" minScaleDenominator="0" penWidth="0" opacity="1" scaleBasedVisibility="0" backgroundColor="#ffffff" height="15" labelPlacementMethod="XHeight">
+  <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+    <DiagramCategory opacity="1" labelPlacementMethod="XHeight" scaleDependency="Area" backgroundColor="#ffffff" diagramOrientation="Up" backgroundAlpha="255" maxScaleDenominator="1e+08" sizeScale="3x:0,0,0,0,0,0" lineSizeScale="3x:0,0,0,0,0,0" width="15" height="15" penAlpha="255" sizeType="MM" rotationOffset="270" barWidth="5" minimumSize="0" scaleBasedVisibility="0" minScaleDenominator="0" penWidth="0" enabled="0" penColor="#000000" lineSizeType="MM">
       <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
-      <attribute label="" color="#000000" field=""/>
+      <attribute color="#000000" field="" label=""/>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings placement="1" obstacle="0" showAll="1" priority="0" dist="0" linePlacementFlags="18" zIndex="0">
+  <DiagramLayerSettings dist="0" obstacle="0" zIndex="0" showAll="1" priority="0" linePlacementFlags="18" placement="1">
     <properties>
       <Option type="Map">
-        <Option name="name" type="QString" value=""/>
+        <Option type="QString" value="" name="name"/>
         <Option name="properties"/>
-        <Option name="type" type="QString" value="collection"/>
+        <Option type="QString" value="collection" name="type"/>
       </Option>
     </properties>
   </DiagramLayerSettings>
@@ -83,62 +83,6 @@
     <checkConfiguration/>
   </geometryOptions>
   <fieldConfiguration>
-    <field name="lsoa_cd">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="gid">
-      <editWidget type="Range">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="lso_nm_">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="lso_nm0">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="rank">
-      <editWidget type="Range">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="decile">
-      <editWidget type="Range">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="quintil">
-      <editWidget type="Range">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="map_grp">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
     <field name="LA_Name">
       <editWidget type="TextEdit">
         <config>
@@ -146,69 +90,401 @@
         </config>
       </editWidget>
     </field>
+    <field name="Dec_1">
+      <editWidget type="Range">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="Dec_2">
+      <editWidget type="Range">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="Dec_3">
+      <editWidget type="Range">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="Dec_4">
+      <editWidget type="Range">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="Dec_5">
+      <editWidget type="Range">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="Dec_6">
+      <editWidget type="Range">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="Dec_7">
+      <editWidget type="Range">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="Dec_8">
+      <editWidget type="Range">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="Dec_9">
+      <editWidget type="Range">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="Dec_10">
+      <editWidget type="Range">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="Tt_LSOA">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="PC_Dc_1">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="PC_Dc_2">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="PC_Dc_3">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="PC_Dc_4">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="PC_Dc_5">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="PC_Dc_6">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="PC_Dc_7">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="PC_Dc_8">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="PC_Dc_9">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="PC_D_10">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="PC_Totl">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="Dep_10">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="Dep_20">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="Dep_30">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="Dep_50">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="Rank_10">
+      <editWidget type="Range">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="Rank_20">
+      <editWidget type="Range">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="Rank_30">
+      <editWidget type="Range">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="Rank_50">
+      <editWidget type="Range">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="Map_No">
+      <editWidget type="Range">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
   </fieldConfiguration>
   <aliases>
-    <alias index="0" name="" field="lsoa_cd"/>
-    <alias index="1" name="" field="gid"/>
-    <alias index="2" name="" field="lso_nm_"/>
-    <alias index="3" name="" field="lso_nm0"/>
-    <alias index="4" name="" field="rank"/>
-    <alias index="5" name="" field="decile"/>
-    <alias index="6" name="" field="quintil"/>
-    <alias index="7" name="" field="map_grp"/>
-    <alias index="8" name="" field="LA_Name"/>
+    <alias field="LA_Name" index="0" name=""/>
+    <alias field="Dec_1" index="1" name=""/>
+    <alias field="Dec_2" index="2" name=""/>
+    <alias field="Dec_3" index="3" name=""/>
+    <alias field="Dec_4" index="4" name=""/>
+    <alias field="Dec_5" index="5" name=""/>
+    <alias field="Dec_6" index="6" name=""/>
+    <alias field="Dec_7" index="7" name=""/>
+    <alias field="Dec_8" index="8" name=""/>
+    <alias field="Dec_9" index="9" name=""/>
+    <alias field="Dec_10" index="10" name=""/>
+    <alias field="Tt_LSOA" index="11" name=""/>
+    <alias field="PC_Dc_1" index="12" name=""/>
+    <alias field="PC_Dc_2" index="13" name=""/>
+    <alias field="PC_Dc_3" index="14" name=""/>
+    <alias field="PC_Dc_4" index="15" name=""/>
+    <alias field="PC_Dc_5" index="16" name=""/>
+    <alias field="PC_Dc_6" index="17" name=""/>
+    <alias field="PC_Dc_7" index="18" name=""/>
+    <alias field="PC_Dc_8" index="19" name=""/>
+    <alias field="PC_Dc_9" index="20" name=""/>
+    <alias field="PC_D_10" index="21" name=""/>
+    <alias field="PC_Totl" index="22" name=""/>
+    <alias field="Dep_10" index="23" name=""/>
+    <alias field="Dep_20" index="24" name=""/>
+    <alias field="Dep_30" index="25" name=""/>
+    <alias field="Dep_50" index="26" name=""/>
+    <alias field="Rank_10" index="27" name=""/>
+    <alias field="Rank_20" index="28" name=""/>
+    <alias field="Rank_30" index="29" name=""/>
+    <alias field="Rank_50" index="30" name=""/>
+    <alias field="Map_No" index="31" name=""/>
   </aliases>
   <excludeAttributesWMS/>
   <excludeAttributesWFS/>
   <defaults>
-    <default applyOnUpdate="0" expression="" field="lsoa_cd"/>
-    <default applyOnUpdate="0" expression="" field="gid"/>
-    <default applyOnUpdate="0" expression="" field="lso_nm_"/>
-    <default applyOnUpdate="0" expression="" field="lso_nm0"/>
-    <default applyOnUpdate="0" expression="" field="rank"/>
-    <default applyOnUpdate="0" expression="" field="decile"/>
-    <default applyOnUpdate="0" expression="" field="quintil"/>
-    <default applyOnUpdate="0" expression="" field="map_grp"/>
     <default applyOnUpdate="0" expression="" field="LA_Name"/>
+    <default applyOnUpdate="0" expression="" field="Dec_1"/>
+    <default applyOnUpdate="0" expression="" field="Dec_2"/>
+    <default applyOnUpdate="0" expression="" field="Dec_3"/>
+    <default applyOnUpdate="0" expression="" field="Dec_4"/>
+    <default applyOnUpdate="0" expression="" field="Dec_5"/>
+    <default applyOnUpdate="0" expression="" field="Dec_6"/>
+    <default applyOnUpdate="0" expression="" field="Dec_7"/>
+    <default applyOnUpdate="0" expression="" field="Dec_8"/>
+    <default applyOnUpdate="0" expression="" field="Dec_9"/>
+    <default applyOnUpdate="0" expression="" field="Dec_10"/>
+    <default applyOnUpdate="0" expression="" field="Tt_LSOA"/>
+    <default applyOnUpdate="0" expression="" field="PC_Dc_1"/>
+    <default applyOnUpdate="0" expression="" field="PC_Dc_2"/>
+    <default applyOnUpdate="0" expression="" field="PC_Dc_3"/>
+    <default applyOnUpdate="0" expression="" field="PC_Dc_4"/>
+    <default applyOnUpdate="0" expression="" field="PC_Dc_5"/>
+    <default applyOnUpdate="0" expression="" field="PC_Dc_6"/>
+    <default applyOnUpdate="0" expression="" field="PC_Dc_7"/>
+    <default applyOnUpdate="0" expression="" field="PC_Dc_8"/>
+    <default applyOnUpdate="0" expression="" field="PC_Dc_9"/>
+    <default applyOnUpdate="0" expression="" field="PC_D_10"/>
+    <default applyOnUpdate="0" expression="" field="PC_Totl"/>
+    <default applyOnUpdate="0" expression="" field="Dep_10"/>
+    <default applyOnUpdate="0" expression="" field="Dep_20"/>
+    <default applyOnUpdate="0" expression="" field="Dep_30"/>
+    <default applyOnUpdate="0" expression="" field="Dep_50"/>
+    <default applyOnUpdate="0" expression="" field="Rank_10"/>
+    <default applyOnUpdate="0" expression="" field="Rank_20"/>
+    <default applyOnUpdate="0" expression="" field="Rank_30"/>
+    <default applyOnUpdate="0" expression="" field="Rank_50"/>
+    <default applyOnUpdate="0" expression="" field="Map_No"/>
   </defaults>
   <constraints>
-    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="lsoa_cd"/>
-    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="gid"/>
-    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="lso_nm_"/>
-    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="lso_nm0"/>
-    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="rank"/>
-    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="decile"/>
-    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="quintil"/>
-    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="map_grp"/>
-    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="LA_Name"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="LA_Name" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="Dec_1" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="Dec_2" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="Dec_3" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="Dec_4" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="Dec_5" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="Dec_6" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="Dec_7" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="Dec_8" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="Dec_9" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="Dec_10" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="Tt_LSOA" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="PC_Dc_1" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="PC_Dc_2" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="PC_Dc_3" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="PC_Dc_4" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="PC_Dc_5" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="PC_Dc_6" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="PC_Dc_7" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="PC_Dc_8" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="PC_Dc_9" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="PC_D_10" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="PC_Totl" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="Dep_10" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="Dep_20" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="Dep_30" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="Dep_50" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="Rank_10" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="Rank_20" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="Rank_30" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="Rank_50" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="Map_No" exp_strength="0"/>
   </constraints>
   <constraintExpressions>
-    <constraint desc="" exp="" field="lsoa_cd"/>
-    <constraint desc="" exp="" field="gid"/>
-    <constraint desc="" exp="" field="lso_nm_"/>
-    <constraint desc="" exp="" field="lso_nm0"/>
-    <constraint desc="" exp="" field="rank"/>
-    <constraint desc="" exp="" field="decile"/>
-    <constraint desc="" exp="" field="quintil"/>
-    <constraint desc="" exp="" field="map_grp"/>
-    <constraint desc="" exp="" field="LA_Name"/>
+    <constraint desc="" field="LA_Name" exp=""/>
+    <constraint desc="" field="Dec_1" exp=""/>
+    <constraint desc="" field="Dec_2" exp=""/>
+    <constraint desc="" field="Dec_3" exp=""/>
+    <constraint desc="" field="Dec_4" exp=""/>
+    <constraint desc="" field="Dec_5" exp=""/>
+    <constraint desc="" field="Dec_6" exp=""/>
+    <constraint desc="" field="Dec_7" exp=""/>
+    <constraint desc="" field="Dec_8" exp=""/>
+    <constraint desc="" field="Dec_9" exp=""/>
+    <constraint desc="" field="Dec_10" exp=""/>
+    <constraint desc="" field="Tt_LSOA" exp=""/>
+    <constraint desc="" field="PC_Dc_1" exp=""/>
+    <constraint desc="" field="PC_Dc_2" exp=""/>
+    <constraint desc="" field="PC_Dc_3" exp=""/>
+    <constraint desc="" field="PC_Dc_4" exp=""/>
+    <constraint desc="" field="PC_Dc_5" exp=""/>
+    <constraint desc="" field="PC_Dc_6" exp=""/>
+    <constraint desc="" field="PC_Dc_7" exp=""/>
+    <constraint desc="" field="PC_Dc_8" exp=""/>
+    <constraint desc="" field="PC_Dc_9" exp=""/>
+    <constraint desc="" field="PC_D_10" exp=""/>
+    <constraint desc="" field="PC_Totl" exp=""/>
+    <constraint desc="" field="Dep_10" exp=""/>
+    <constraint desc="" field="Dep_20" exp=""/>
+    <constraint desc="" field="Dep_30" exp=""/>
+    <constraint desc="" field="Dep_50" exp=""/>
+    <constraint desc="" field="Rank_10" exp=""/>
+    <constraint desc="" field="Rank_20" exp=""/>
+    <constraint desc="" field="Rank_30" exp=""/>
+    <constraint desc="" field="Rank_50" exp=""/>
+    <constraint desc="" field="Map_No" exp=""/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
     <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
   </attributeactions>
-  <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;LA(LA)N&quot;" sortOrder="0">
+  <attributetableconfig sortExpression="&quot;PC_Dc_2&quot;" actionWidgetStyle="dropDown" sortOrder="1">
     <columns>
-      <column type="actions" width="-1" hidden="1"/>
-      <column name="lsoa_cd" type="field" width="-1" hidden="0"/>
-      <column name="gid" type="field" width="-1" hidden="0"/>
-      <column name="lso_nm_" type="field" width="-1" hidden="0"/>
-      <column name="lso_nm0" type="field" width="-1" hidden="0"/>
-      <column name="rank" type="field" width="-1" hidden="0"/>
-      <column name="decile" type="field" width="-1" hidden="0"/>
-      <column name="quintil" type="field" width="-1" hidden="0"/>
-      <column name="map_grp" type="field" width="-1" hidden="0"/>
-      <column name="LA_Name" type="field" width="-1" hidden="0"/>
+      <column hidden="1" type="actions" width="-1"/>
+      <column hidden="0" type="field" name="LA_Name" width="-1"/>
+      <column hidden="0" type="field" name="Dec_1" width="-1"/>
+      <column hidden="0" type="field" name="Dec_2" width="-1"/>
+      <column hidden="0" type="field" name="Dec_3" width="-1"/>
+      <column hidden="0" type="field" name="Dec_4" width="-1"/>
+      <column hidden="0" type="field" name="Dec_5" width="-1"/>
+      <column hidden="0" type="field" name="Dec_6" width="-1"/>
+      <column hidden="0" type="field" name="Dec_7" width="-1"/>
+      <column hidden="0" type="field" name="Dec_8" width="-1"/>
+      <column hidden="0" type="field" name="Dec_9" width="-1"/>
+      <column hidden="0" type="field" name="Dec_10" width="-1"/>
+      <column hidden="0" type="field" name="Tt_LSOA" width="-1"/>
+      <column hidden="0" type="field" name="PC_Dc_1" width="-1"/>
+      <column hidden="0" type="field" name="PC_Dc_2" width="-1"/>
+      <column hidden="0" type="field" name="PC_Dc_3" width="-1"/>
+      <column hidden="0" type="field" name="PC_Dc_4" width="-1"/>
+      <column hidden="0" type="field" name="PC_Dc_5" width="-1"/>
+      <column hidden="0" type="field" name="PC_Dc_6" width="-1"/>
+      <column hidden="0" type="field" name="PC_Dc_7" width="-1"/>
+      <column hidden="0" type="field" name="PC_Dc_8" width="-1"/>
+      <column hidden="0" type="field" name="PC_Dc_9" width="-1"/>
+      <column hidden="0" type="field" name="PC_D_10" width="-1"/>
+      <column hidden="0" type="field" name="PC_Totl" width="-1"/>
+      <column hidden="0" type="field" name="Dep_10" width="-1"/>
+      <column hidden="0" type="field" name="Dep_20" width="-1"/>
+      <column hidden="0" type="field" name="Dep_30" width="-1"/>
+      <column hidden="0" type="field" name="Dep_50" width="-1"/>
+      <column hidden="0" type="field" name="Rank_10" width="-1"/>
+      <column hidden="0" type="field" name="Rank_20" width="-1"/>
+      <column hidden="0" type="field" name="Rank_30" width="-1"/>
+      <column hidden="0" type="field" name="Rank_50" width="-1"/>
+      <column hidden="0" type="field" name="Map_No" width="-1"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
@@ -245,16 +521,47 @@ def my_form_open(dialog, layer, feature):
     <field editable="1" name="DESCRIPT0"/>
     <field editable="1" name="DESCRIPT1"/>
     <field editable="1" name="DESCRIPTIO"/>
+    <field editable="1" name="Dec_1"/>
+    <field editable="1" name="Dec_10"/>
+    <field editable="1" name="Dec_2"/>
+    <field editable="1" name="Dec_3"/>
+    <field editable="1" name="Dec_4"/>
+    <field editable="1" name="Dec_5"/>
+    <field editable="1" name="Dec_6"/>
+    <field editable="1" name="Dec_7"/>
+    <field editable="1" name="Dec_8"/>
+    <field editable="1" name="Dec_9"/>
+    <field editable="1" name="Dep_10"/>
+    <field editable="1" name="Dep_20"/>
+    <field editable="1" name="Dep_30"/>
+    <field editable="1" name="Dep_50"/>
     <field editable="1" name="FILE_NAME"/>
     <field editable="1" name="HECTARES"/>
     <field editable="1" name="LA(LA)N"/>
     <field editable="1" name="LA_Name"/>
+    <field editable="1" name="Map_No"/>
     <field editable="1" name="NAME"/>
     <field editable="1" name="NUMBER"/>
     <field editable="1" name="NUMBER0"/>
+    <field editable="1" name="PC_D_10"/>
+    <field editable="1" name="PC_Dc_1"/>
+    <field editable="1" name="PC_Dc_2"/>
+    <field editable="1" name="PC_Dc_3"/>
+    <field editable="1" name="PC_Dc_4"/>
+    <field editable="1" name="PC_Dc_5"/>
+    <field editable="1" name="PC_Dc_6"/>
+    <field editable="1" name="PC_Dc_7"/>
+    <field editable="1" name="PC_Dc_8"/>
+    <field editable="1" name="PC_Dc_9"/>
+    <field editable="1" name="PC_Totl"/>
     <field editable="1" name="POLYGON_ID"/>
+    <field editable="1" name="Rank_10"/>
+    <field editable="1" name="Rank_20"/>
+    <field editable="1" name="Rank_30"/>
+    <field editable="1" name="Rank_50"/>
     <field editable="1" name="TYPE_COD0"/>
     <field editable="1" name="TYPE_CODE"/>
+    <field editable="1" name="Tt_LSOA"/>
     <field editable="1" name="UNIT_ID"/>
     <field editable="1" name="decile"/>
     <field editable="1" name="gid"/>
@@ -272,16 +579,47 @@ def my_form_open(dialog, layer, feature):
     <field labelOnTop="0" name="DESCRIPT0"/>
     <field labelOnTop="0" name="DESCRIPT1"/>
     <field labelOnTop="0" name="DESCRIPTIO"/>
+    <field labelOnTop="0" name="Dec_1"/>
+    <field labelOnTop="0" name="Dec_10"/>
+    <field labelOnTop="0" name="Dec_2"/>
+    <field labelOnTop="0" name="Dec_3"/>
+    <field labelOnTop="0" name="Dec_4"/>
+    <field labelOnTop="0" name="Dec_5"/>
+    <field labelOnTop="0" name="Dec_6"/>
+    <field labelOnTop="0" name="Dec_7"/>
+    <field labelOnTop="0" name="Dec_8"/>
+    <field labelOnTop="0" name="Dec_9"/>
+    <field labelOnTop="0" name="Dep_10"/>
+    <field labelOnTop="0" name="Dep_20"/>
+    <field labelOnTop="0" name="Dep_30"/>
+    <field labelOnTop="0" name="Dep_50"/>
     <field labelOnTop="0" name="FILE_NAME"/>
     <field labelOnTop="0" name="HECTARES"/>
     <field labelOnTop="0" name="LA(LA)N"/>
     <field labelOnTop="0" name="LA_Name"/>
+    <field labelOnTop="0" name="Map_No"/>
     <field labelOnTop="0" name="NAME"/>
     <field labelOnTop="0" name="NUMBER"/>
     <field labelOnTop="0" name="NUMBER0"/>
+    <field labelOnTop="0" name="PC_D_10"/>
+    <field labelOnTop="0" name="PC_Dc_1"/>
+    <field labelOnTop="0" name="PC_Dc_2"/>
+    <field labelOnTop="0" name="PC_Dc_3"/>
+    <field labelOnTop="0" name="PC_Dc_4"/>
+    <field labelOnTop="0" name="PC_Dc_5"/>
+    <field labelOnTop="0" name="PC_Dc_6"/>
+    <field labelOnTop="0" name="PC_Dc_7"/>
+    <field labelOnTop="0" name="PC_Dc_8"/>
+    <field labelOnTop="0" name="PC_Dc_9"/>
+    <field labelOnTop="0" name="PC_Totl"/>
     <field labelOnTop="0" name="POLYGON_ID"/>
+    <field labelOnTop="0" name="Rank_10"/>
+    <field labelOnTop="0" name="Rank_20"/>
+    <field labelOnTop="0" name="Rank_30"/>
+    <field labelOnTop="0" name="Rank_50"/>
     <field labelOnTop="0" name="TYPE_COD0"/>
     <field labelOnTop="0" name="TYPE_CODE"/>
+    <field labelOnTop="0" name="Tt_LSOA"/>
     <field labelOnTop="0" name="UNIT_ID"/>
     <field labelOnTop="0" name="decile"/>
     <field labelOnTop="0" name="gid"/>

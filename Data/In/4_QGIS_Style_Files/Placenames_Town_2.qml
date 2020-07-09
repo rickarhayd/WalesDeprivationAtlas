@@ -1,40 +1,40 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis simplifyDrawingTol="1" styleCategories="AllStyleCategories" labelsEnabled="1" maxScale="0" hasScaleBasedVisibilityFlag="0" simplifyMaxScale="1" simplifyDrawingHints="0" version="3.4.8-Madeira" simplifyLocal="1" minScale="1e+08" simplifyAlgorithm="0" readOnly="0">
+<qgis simplifyDrawingTol="1" simplifyLocal="1" styleCategories="AllStyleCategories" simplifyMaxScale="1" readOnly="0" maxScale="0" labelsEnabled="1" minScale="1e+08" simplifyAlgorithm="0" version="3.4.8-Madeira" simplifyDrawingHints="0" hasScaleBasedVisibilityFlag="0">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
   </flags>
-  <renderer-v2 symbollevels="0" type="RuleRenderer" enableorderby="0" forceraster="0">
+  <renderer-v2 forceraster="0" type="RuleRenderer" enableorderby="0" symbollevels="0">
     <rules key="{209a0177-978c-4d97-a8ad-42f61bb8b2b1}">
-      <rule key="{3bfbbe45-44fd-4b7a-9eeb-ccf58900ff71}" filter="intersects( @atlas_geometry, $geometry)" symbol="0"/>
+      <rule filter="intersects( @atlas_geometry, $geometry)" symbol="0" key="{3bfbbe45-44fd-4b7a-9eeb-ccf58900ff71}"/>
     </rules>
     <symbols>
-      <symbol force_rhr="0" type="marker" name="0" alpha="1" clip_to_extent="1">
-        <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
-          <prop v="0" k="angle"/>
-          <prop v="249,249,15,255" k="color"/>
-          <prop v="1" k="horizontal_anchor_point"/>
-          <prop v="bevel" k="joinstyle"/>
-          <prop v="circle" k="name"/>
-          <prop v="0,0" k="offset"/>
-          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-          <prop v="MM" k="offset_unit"/>
-          <prop v="35,35,35,255" k="outline_color"/>
-          <prop v="solid" k="outline_style"/>
-          <prop v="0.2" k="outline_width"/>
-          <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-          <prop v="MM" k="outline_width_unit"/>
-          <prop v="diameter" k="scale_method"/>
-          <prop v="1.6" k="size"/>
-          <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-          <prop v="MM" k="size_unit"/>
-          <prop v="1" k="vertical_anchor_point"/>
+      <symbol clip_to_extent="1" force_rhr="0" alpha="1" type="marker" name="0">
+        <layer enabled="1" pass="0" locked="0" class="SimpleMarker">
+          <prop k="angle" v="0"/>
+          <prop k="color" v="249,249,15,255"/>
+          <prop k="horizontal_anchor_point" v="1"/>
+          <prop k="joinstyle" v="bevel"/>
+          <prop k="name" v="circle"/>
+          <prop k="offset" v="0,0"/>
+          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="outline_color" v="35,35,35,255"/>
+          <prop k="outline_style" v="solid"/>
+          <prop k="outline_width" v="0.2"/>
+          <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="outline_width_unit" v="MM"/>
+          <prop k="scale_method" v="diameter"/>
+          <prop k="size" v="1.6"/>
+          <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="size_unit" v="MM"/>
+          <prop k="vertical_anchor_point" v="1"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option type="QString" name="name" value=""/>
+              <Option type="QString" value="" name="name"/>
               <Option name="properties"/>
-              <Option type="QString" name="type" value="collection"/>
+              <Option type="QString" value="collection" name="type"/>
             </Option>
           </data_defined_properties>
         </layer>
@@ -43,84 +43,92 @@
   </renderer-v2>
   <labeling type="simple">
     <settings>
-      <text-style isExpression="0" previewBkgrdColor="#ffffff" fontStrikeout="0" fontUnderline="0" textColor="0,0,0,255" textOpacity="1" fontWordSpacing="0" namedStyle="Regular" fontSize="5.5" multilineHeight="1" fontCapitals="1" fontWeight="57" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontItalic="0" fieldName="NAME_USE" fontFamily="Raleway Medium" useSubstitutions="0" blendMode="0" fontLetterSpacing="0" fontSizeUnit="Point">
-        <text-buffer bufferJoinStyle="128" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferOpacity="0.8" bufferNoFill="1" bufferColor="255,255,255,255" bufferBlendMode="0" bufferSize="0.5" bufferDraw="1" bufferSizeUnits="MM">
-          <effect type="effectStack" enabled="0">
+      <text-style fontWeight="57" textColor="0,0,0,255" fontStrikeout="0" fontUnderline="0" fontWordSpacing="0" fontFamily="Raleway Medium" fontCapitals="1" fontLetterSpacing="0" textOpacity="1" previewBkgrdColor="#ffffff" fontSizeMapUnitScale="3x:0,0,0,0,0,0" namedStyle="Regular" fontItalic="0" fontSize="5.5" isExpression="0" multilineHeight="1" fieldName="NAME_USE" fontSizeUnit="Point" useSubstitutions="0" blendMode="0">
+        <text-buffer bufferDraw="1" bufferSizeUnits="MM" bufferOpacity="0.8" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferNoFill="1" bufferSize="0.5" bufferColor="255,255,255,255" bufferJoinStyle="128" bufferBlendMode="0">
+          <effect enabled="0" type="effectStack">
             <effect type="dropShadow">
-              <prop v="13" k="blend_mode"/>
-              <prop v="10" k="blur_level"/>
-              <prop v="0,0,0,255" k="color"/>
-              <prop v="2" k="draw_mode"/>
-              <prop v="0" k="enabled"/>
-              <prop v="135" k="offset_angle"/>
-              <prop v="2" k="offset_distance"/>
-              <prop v="MM" k="offset_unit"/>
-              <prop v="3x:0,0,0,0,0,0" k="offset_unit_scale"/>
-              <prop v="1" k="opacity"/>
+              <prop k="blend_mode" v="13"/>
+              <prop k="blur_level" v="10"/>
+              <prop k="color" v="0,0,0,255"/>
+              <prop k="draw_mode" v="2"/>
+              <prop k="enabled" v="0"/>
+              <prop k="offset_angle" v="135"/>
+              <prop k="offset_distance" v="2"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="offset_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="opacity" v="1"/>
             </effect>
             <effect type="outerGlow">
-              <prop v="0" k="blend_mode"/>
-              <prop v="3" k="blur_level"/>
-              <prop v="0" k="color_type"/>
-              <prop v="2" k="draw_mode"/>
-              <prop v="1" k="enabled"/>
-              <prop v="0.5" k="opacity"/>
-              <prop v="255,255,255,255" k="single_color"/>
-              <prop v="2" k="spread"/>
-              <prop v="MM" k="spread_unit"/>
-              <prop v="3x:0,0,0,0,0,0" k="spread_unit_scale"/>
+              <prop k="blend_mode" v="0"/>
+              <prop k="blur_level" v="3"/>
+              <prop k="color1" v="0,0,255,255"/>
+              <prop k="color2" v="0,255,0,255"/>
+              <prop k="color_type" v="0"/>
+              <prop k="discrete" v="0"/>
+              <prop k="draw_mode" v="2"/>
+              <prop k="enabled" v="1"/>
+              <prop k="opacity" v="0.5"/>
+              <prop k="rampType" v="gradient"/>
+              <prop k="single_color" v="255,255,255,255"/>
+              <prop k="spread" v="2"/>
+              <prop k="spread_unit" v="MM"/>
+              <prop k="spread_unit_scale" v="3x:0,0,0,0,0,0"/>
             </effect>
             <effect type="drawSource">
-              <prop v="0" k="blend_mode"/>
-              <prop v="2" k="draw_mode"/>
-              <prop v="0" k="enabled"/>
-              <prop v="1" k="opacity"/>
+              <prop k="blend_mode" v="0"/>
+              <prop k="draw_mode" v="2"/>
+              <prop k="enabled" v="0"/>
+              <prop k="opacity" v="1"/>
             </effect>
             <effect type="innerShadow">
-              <prop v="13" k="blend_mode"/>
-              <prop v="10" k="blur_level"/>
-              <prop v="0,0,0,255" k="color"/>
-              <prop v="2" k="draw_mode"/>
-              <prop v="0" k="enabled"/>
-              <prop v="135" k="offset_angle"/>
-              <prop v="2" k="offset_distance"/>
-              <prop v="MM" k="offset_unit"/>
-              <prop v="3x:0,0,0,0,0,0" k="offset_unit_scale"/>
-              <prop v="1" k="opacity"/>
+              <prop k="blend_mode" v="13"/>
+              <prop k="blur_level" v="10"/>
+              <prop k="color" v="0,0,0,255"/>
+              <prop k="draw_mode" v="2"/>
+              <prop k="enabled" v="0"/>
+              <prop k="offset_angle" v="135"/>
+              <prop k="offset_distance" v="2"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="offset_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="opacity" v="1"/>
             </effect>
             <effect type="innerGlow">
-              <prop v="0" k="blend_mode"/>
-              <prop v="3" k="blur_level"/>
-              <prop v="0" k="color_type"/>
-              <prop v="2" k="draw_mode"/>
-              <prop v="0" k="enabled"/>
-              <prop v="0.5" k="opacity"/>
-              <prop v="255,255,255,255" k="single_color"/>
-              <prop v="2" k="spread"/>
-              <prop v="MM" k="spread_unit"/>
-              <prop v="3x:0,0,0,0,0,0" k="spread_unit_scale"/>
+              <prop k="blend_mode" v="0"/>
+              <prop k="blur_level" v="3"/>
+              <prop k="color1" v="0,0,255,255"/>
+              <prop k="color2" v="0,255,0,255"/>
+              <prop k="color_type" v="0"/>
+              <prop k="discrete" v="0"/>
+              <prop k="draw_mode" v="2"/>
+              <prop k="enabled" v="0"/>
+              <prop k="opacity" v="0.5"/>
+              <prop k="rampType" v="gradient"/>
+              <prop k="single_color" v="255,255,255,255"/>
+              <prop k="spread" v="2"/>
+              <prop k="spread_unit" v="MM"/>
+              <prop k="spread_unit_scale" v="3x:0,0,0,0,0,0"/>
             </effect>
           </effect>
         </text-buffer>
-        <background shapeSVGFile="" shapeRotationType="0" shapeSizeType="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeType="0" shapeBorderWidthUnit="MM" shapeBorderColor="128,128,128,255" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeOffsetY="0" shapeRadiiX="0" shapeSizeX="0" shapeFillColor="255,255,255,255" shapeJoinStyle="64" shapeRadiiY="0" shapeBorderWidth="0" shapeBlendMode="0" shapeRadiiUnit="MM" shapeSizeUnit="MM" shapeOffsetX="0" shapeDraw="0" shapeSizeY="0" shapeOpacity="1" shapeRotation="0"/>
-        <shadow shadowRadiusAlphaOnly="0" shadowOffsetDist="1" shadowDraw="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetGlobal="1" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOpacity="0.7" shadowColor="0,0,0,255" shadowScale="100" shadowBlendMode="6" shadowUnder="0" shadowOffsetAngle="135" shadowOffsetUnit="MM" shadowRadius="1.5" shadowRadiusUnit="MM"/>
+        <background shapeDraw="0" shapeOffsetX="0" shapeRotationType="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeBorderColor="128,128,128,255" shapeSizeUnit="MM" shapeOffsetY="0" shapeRadiiX="0" shapeSizeType="0" shapeRadiiUnit="MM" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeFillColor="255,255,255,255" shapeBorderWidth="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeJoinStyle="64" shapeType="0" shapeSVGFile="" shapeRadiiY="0" shapeBorderWidthUnit="MM" shapeBlendMode="0" shapeOpacity="1" shapeOffsetUnit="MM" shapeRotation="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeSizeX="0"/>
+        <shadow shadowOffsetUnit="MM" shadowOpacity="0.7" shadowColor="0,0,0,255" shadowUnder="0" shadowScale="100" shadowRadiusUnit="MM" shadowRadiusAlphaOnly="0" shadowDraw="0" shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadius="1.5" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetDist="1" shadowBlendMode="6" shadowOffsetGlobal="1"/>
         <substitutions/>
       </text-style>
-      <text-format autoWrapLength="0" wrapChar="" placeDirectionSymbol="0" multilineAlign="3" leftDirectionSymbol="&lt;" useMaxLineLengthForAutoWrap="1" decimals="3" plussign="0" addDirectionSymbol="0" formatNumbers="0" rightDirectionSymbol=">" reverseDirectionSymbol="0"/>
-      <placement preserveRotation="1" offsetUnits="MM" distMapUnitScale="3x:0,0,0,0,0,0" rotationAngle="0" placementFlags="10" centroidInside="0" dist="1.3" quadOffset="4" distUnits="MM" xOffset="0" fitInPolygonOnly="0" maxCurvedCharAngleIn="25" repeatDistanceUnits="MM" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" offsetType="0" centroidWhole="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" yOffset="0" placement="0" maxCurvedCharAngleOut="-25" priority="5" repeatDistance="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0"/>
-      <rendering mergeLines="0" scaleVisibility="0" scaleMax="0" limitNumLabels="0" upsidedownLabels="0" minFeatureSize="0" fontMaxPixelSize="10000" fontLimitPixelSize="0" drawLabels="1" maxNumLabels="2000" zIndex="0" labelPerPart="0" fontMinPixelSize="3" displayAll="0" obstacleType="0" scaleMin="0" obstacleFactor="1" obstacle="1"/>
+      <text-format wrapChar="" decimals="3" placeDirectionSymbol="0" leftDirectionSymbol="&lt;" autoWrapLength="0" useMaxLineLengthForAutoWrap="1" formatNumbers="0" reverseDirectionSymbol="0" rightDirectionSymbol=">" plussign="0" addDirectionSymbol="0" multilineAlign="3"/>
+      <placement centroidWhole="0" priority="5" yOffset="0" dist="1.1" centroidInside="0" distMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceUnits="MM" xOffset="0" fitInPolygonOnly="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" offsetUnits="MM" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" rotationAngle="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" preserveRotation="1" quadOffset="4" offsetType="0" distUnits="MM" maxCurvedCharAngleIn="25" maxCurvedCharAngleOut="-25" placement="0" placementFlags="10" repeatDistance="0"/>
+      <rendering obstacleType="0" mergeLines="0" maxNumLabels="2000" fontMaxPixelSize="10000" upsidedownLabels="0" limitNumLabels="0" obstacleFactor="1" fontLimitPixelSize="0" obstacle="1" displayAll="0" scaleMin="0" labelPerPart="0" drawLabels="1" scaleMax="0" zIndex="0" scaleVisibility="0" fontMinPixelSize="3" minFeatureSize="0"/>
       <dd_properties>
         <Option type="Map">
-          <Option type="QString" name="name" value=""/>
+          <Option type="QString" value="" name="name"/>
           <Option name="properties"/>
-          <Option type="QString" name="type" value="collection"/>
+          <Option type="QString" value="collection" name="type"/>
         </Option>
       </dd_properties>
     </settings>
   </labeling>
   <customproperties>
-    <property key="dualview/previewExpressions" value="fid"/>
-    <property key="embeddedWidgets/count" value="0"/>
+    <property value="fid" key="dualview/previewExpressions"/>
+    <property value="0" key="embeddedWidgets/count"/>
     <property key="variableNames"/>
     <property key="variableValues"/>
   </customproperties>
@@ -128,21 +136,21 @@
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
   <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-    <DiagramCategory minScaleDenominator="0" backgroundAlpha="255" scaleDependency="Area" barWidth="5" penColor="#000000" diagramOrientation="Up" minimumSize="0" scaleBasedVisibility="0" enabled="0" lineSizeType="MM" sizeType="MM" sizeScale="3x:0,0,0,0,0,0" penAlpha="255" opacity="1" labelPlacementMethod="XHeight" penWidth="0" maxScaleDenominator="1e+08" lineSizeScale="3x:0,0,0,0,0,0" height="15" backgroundColor="#ffffff" rotationOffset="270" width="15">
+    <DiagramCategory opacity="1" labelPlacementMethod="XHeight" scaleDependency="Area" backgroundColor="#ffffff" diagramOrientation="Up" backgroundAlpha="255" maxScaleDenominator="1e+08" sizeScale="3x:0,0,0,0,0,0" lineSizeScale="3x:0,0,0,0,0,0" width="15" height="15" penAlpha="255" sizeType="MM" rotationOffset="270" barWidth="5" minimumSize="0" scaleBasedVisibility="0" minScaleDenominator="0" penWidth="0" enabled="0" penColor="#000000" lineSizeType="MM">
       <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
       <attribute color="#000000" field="" label=""/>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings obstacle="0" zIndex="0" priority="0" placement="0" showAll="1" dist="0" linePlacementFlags="18">
+  <DiagramLayerSettings dist="0" obstacle="0" zIndex="0" showAll="1" priority="0" linePlacementFlags="18" placement="0">
     <properties>
       <Option type="Map">
-        <Option type="QString" name="name" value=""/>
+        <Option type="QString" value="" name="name"/>
         <Option name="properties"/>
-        <Option type="QString" name="type" value="collection"/>
+        <Option type="QString" value="collection" name="type"/>
       </Option>
     </properties>
   </DiagramLayerSettings>
-  <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+  <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
     <activeChecks/>
     <checkConfiguration/>
   </geometryOptions>
@@ -184,27 +192,27 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias name="" field="NAME_USE" index="0"/>
-    <alias name="" field="COUNTY_UNI" index="1"/>
-    <alias name="" field="LOCAL_TYPE" index="2"/>
-    <alias name="" field="MOST_DETAI" index="3"/>
-    <alias name="" field="LEAST_DETA" index="4"/>
+    <alias field="NAME_USE" index="0" name=""/>
+    <alias field="COUNTY_UNI" index="1" name=""/>
+    <alias field="LOCAL_TYPE" index="2" name=""/>
+    <alias field="MOST_DETAI" index="3" name=""/>
+    <alias field="LEAST_DETA" index="4" name=""/>
   </aliases>
   <excludeAttributesWMS/>
   <excludeAttributesWFS/>
   <defaults>
-    <default applyOnUpdate="0" field="NAME_USE" expression=""/>
-    <default applyOnUpdate="0" field="COUNTY_UNI" expression=""/>
-    <default applyOnUpdate="0" field="LOCAL_TYPE" expression=""/>
-    <default applyOnUpdate="0" field="MOST_DETAI" expression=""/>
-    <default applyOnUpdate="0" field="LEAST_DETA" expression=""/>
+    <default applyOnUpdate="0" expression="" field="NAME_USE"/>
+    <default applyOnUpdate="0" expression="" field="COUNTY_UNI"/>
+    <default applyOnUpdate="0" expression="" field="LOCAL_TYPE"/>
+    <default applyOnUpdate="0" expression="" field="MOST_DETAI"/>
+    <default applyOnUpdate="0" expression="" field="LEAST_DETA"/>
   </defaults>
   <constraints>
-    <constraint unique_strength="0" field="NAME_USE" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" field="COUNTY_UNI" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" field="LOCAL_TYPE" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" field="MOST_DETAI" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" field="LEAST_DETA" exp_strength="0" constraints="0" notnull_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="NAME_USE" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="COUNTY_UNI" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="LOCAL_TYPE" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="MOST_DETAI" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="LEAST_DETA" exp_strength="0"/>
   </constraints>
   <constraintExpressions>
     <constraint desc="" field="NAME_USE" exp=""/>
@@ -215,16 +223,16 @@
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
-    <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+    <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
   </attributeactions>
-  <attributetableconfig sortOrder="0" sortExpression="&quot;LOCAL_TYPE&quot;" actionWidgetStyle="dropDown">
+  <attributetableconfig sortExpression="&quot;NAME_USE&quot;" actionWidgetStyle="dropDown" sortOrder="1">
     <columns>
-      <column type="field" name="LOCAL_TYPE" hidden="0" width="-1"/>
-      <column type="field" name="MOST_DETAI" hidden="0" width="-1"/>
-      <column type="field" name="LEAST_DETA" hidden="0" width="-1"/>
-      <column type="actions" hidden="1" width="-1"/>
-      <column type="field" name="NAME_USE" hidden="0" width="-1"/>
-      <column type="field" name="COUNTY_UNI" hidden="0" width="-1"/>
+      <column hidden="0" type="field" name="LOCAL_TYPE" width="-1"/>
+      <column hidden="0" type="field" name="MOST_DETAI" width="-1"/>
+      <column hidden="0" type="field" name="LEAST_DETA" width="-1"/>
+      <column hidden="1" type="actions" width="-1"/>
+      <column hidden="0" type="field" name="NAME_USE" width="-1"/>
+      <column hidden="0" type="field" name="COUNTY_UNI" width="-1"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
@@ -291,40 +299,40 @@ def my_form_open(dialog, layer, feature):
     <field editable="1" name="fid"/>
   </editable>
   <labelOnTop>
-    <field name="COUNTRY" labelOnTop="0"/>
-    <field name="COUNTRY_UR" labelOnTop="0"/>
-    <field name="COUNTY_UNI" labelOnTop="0"/>
-    <field name="COUNTY_U_1" labelOnTop="0"/>
-    <field name="COUNTY_U_2" labelOnTop="0"/>
-    <field name="DISTRICT_1" labelOnTop="0"/>
-    <field name="DISTRICT_2" labelOnTop="0"/>
-    <field name="DISTRICT_B" labelOnTop="0"/>
-    <field name="ID" labelOnTop="0"/>
-    <field name="LEAST_DETA" labelOnTop="0"/>
-    <field name="LOCAL_TYPE" labelOnTop="0"/>
-    <field name="MBR_XMAX" labelOnTop="0"/>
-    <field name="MBR_XMIN" labelOnTop="0"/>
-    <field name="MBR_YMAX" labelOnTop="0"/>
-    <field name="MBR_YMIN" labelOnTop="0"/>
-    <field name="MOST_DETAI" labelOnTop="0"/>
-    <field name="NAME1" labelOnTop="0"/>
-    <field name="NAME1_LANG" labelOnTop="0"/>
-    <field name="NAME2" labelOnTop="0"/>
-    <field name="NAME2_LANG" labelOnTop="0"/>
-    <field name="NAMES_URI" labelOnTop="0"/>
-    <field name="NAME_USE" labelOnTop="0"/>
-    <field name="POPULATED_" labelOnTop="0"/>
-    <field name="POPULATE_1" labelOnTop="0"/>
-    <field name="POPULATE_2" labelOnTop="0"/>
-    <field name="POSTCODE_1" labelOnTop="0"/>
-    <field name="POSTCODE_D" labelOnTop="0"/>
-    <field name="REGION" labelOnTop="0"/>
-    <field name="REGION_URI" labelOnTop="0"/>
-    <field name="RELATED_SP" labelOnTop="0"/>
-    <field name="SAME_AS_DB" labelOnTop="0"/>
-    <field name="SAME_AS_GE" labelOnTop="0"/>
-    <field name="TYPE" labelOnTop="0"/>
-    <field name="fid" labelOnTop="0"/>
+    <field labelOnTop="0" name="COUNTRY"/>
+    <field labelOnTop="0" name="COUNTRY_UR"/>
+    <field labelOnTop="0" name="COUNTY_UNI"/>
+    <field labelOnTop="0" name="COUNTY_U_1"/>
+    <field labelOnTop="0" name="COUNTY_U_2"/>
+    <field labelOnTop="0" name="DISTRICT_1"/>
+    <field labelOnTop="0" name="DISTRICT_2"/>
+    <field labelOnTop="0" name="DISTRICT_B"/>
+    <field labelOnTop="0" name="ID"/>
+    <field labelOnTop="0" name="LEAST_DETA"/>
+    <field labelOnTop="0" name="LOCAL_TYPE"/>
+    <field labelOnTop="0" name="MBR_XMAX"/>
+    <field labelOnTop="0" name="MBR_XMIN"/>
+    <field labelOnTop="0" name="MBR_YMAX"/>
+    <field labelOnTop="0" name="MBR_YMIN"/>
+    <field labelOnTop="0" name="MOST_DETAI"/>
+    <field labelOnTop="0" name="NAME1"/>
+    <field labelOnTop="0" name="NAME1_LANG"/>
+    <field labelOnTop="0" name="NAME2"/>
+    <field labelOnTop="0" name="NAME2_LANG"/>
+    <field labelOnTop="0" name="NAMES_URI"/>
+    <field labelOnTop="0" name="NAME_USE"/>
+    <field labelOnTop="0" name="POPULATED_"/>
+    <field labelOnTop="0" name="POPULATE_1"/>
+    <field labelOnTop="0" name="POPULATE_2"/>
+    <field labelOnTop="0" name="POSTCODE_1"/>
+    <field labelOnTop="0" name="POSTCODE_D"/>
+    <field labelOnTop="0" name="REGION"/>
+    <field labelOnTop="0" name="REGION_URI"/>
+    <field labelOnTop="0" name="RELATED_SP"/>
+    <field labelOnTop="0" name="SAME_AS_DB"/>
+    <field labelOnTop="0" name="SAME_AS_GE"/>
+    <field labelOnTop="0" name="TYPE"/>
+    <field labelOnTop="0" name="fid"/>
   </labelOnTop>
   <widgets/>
   <previewExpression>fid</previewExpression>
